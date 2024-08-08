@@ -1,0 +1,40 @@
+<div class="request-body">
+    <div class="header"><h1 class="display-3"><i class="material-icons" style="font-size: 3.6rem; font-weight: 700;">people</i> My Profile</h1></div>
+    
+      <div id="requ" class="all-requests">
+        <ul class="team">
+          <li *ngFor="let item of profiles"> 
+            <div id="notify_{{item.id}}" class="card" style="width: 50rem;">
+            <img class="card-img-top" src="../../../assets/card-background.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"><img src="../../../assets/avatar.jpg" width="80" height="80" class="d-inline-block align-top img-circle" alt="profile-logo"> {{item.firstName}} {{item.lastName}} </h4>
+                 <p class="card-text"><strong>@{{item.email}}</strong></p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong class="intext">Bio Info: </strong>
+                  <br><br>
+                  <p><em>Date Of Birth: </em>{{item.dob}}</p>
+                  <p><em>Address: </em>{{item.address}}</p>
+                  <p><em>City: </em>{{item.city}}</p>
+                  <p><em>State/County: </em>{{item.state}}</p>
+                  <p><em>Country: </em>{{item.country}}</p>
+                  <p><em>PIN/ZIP: </em>{{item.pin}}</p>
+                  <p><em>Phone Number: </em>{{item.countryCode}} {{item.phone}}</p>
+                </li>
+                <li class="list-group-item"><strong class="intext">Pro Info: </strong>
+                  <br><br>
+                  <p><em>User Handle: </em>{{item.email}}</p>
+                  <p><em>Aadhaar: </em>{{item.aadhar}}</p>
+                  <p><em>PAN: </em>{{item.pan}}</p>
+                  <p><em>Occupation: </em>{{item.occupation}}</p>
+                </li>
+              </ul>
+            </div>
+    
+            <br><br>
+    
+          </li>
+        </ul>
+
+      </div>
+    </div>

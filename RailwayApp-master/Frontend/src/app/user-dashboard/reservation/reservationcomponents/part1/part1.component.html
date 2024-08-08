@@ -1,0 +1,105 @@
+<div id="errorAlert" class="alert alert-danger div-hidden" role="alert"></div>
+
+<div class="flex-parent">
+	<form>
+	<!-- Sign Up Form Starts Here -->	
+	
+		<h2 class="main-header"><i class="material-icons" style="font-weight: 700; font-size: 2.8rem;">pin_drop</i> Journey Details</h2>
+		<br>
+
+		<div class="flex-container">
+			<div class="flex-item" >
+
+				<!-- Flex Item -->
+			  <div class="form-group">
+				  <label for="fromStn">From Station: </label>
+					<input type="text" id="fromStn" name="fromStn" [(ngModel)]="fromStn" class="form-control csp" style="width:80%" list="json-datalist" placeholder="Enter the station name." >
+					<datalist id="json-datalist"></datalist>
+				</div>
+				<!-- Flex Item -->	
+			</div>		
+	
+			
+			<div class="flex-item" >
+				<!-- Flex Item -->
+					<div class="form-group">
+							<label for="toStn">To Station: </label>
+							<input type="text" id="toStn" name="toStn" [(ngModel)]="toStn" class="form-control csp" style="width:80%" list="json-datalist" placeholder="Enter the station name." >
+							<datalist id="json-datalist"></datalist>			
+					</div>
+				<!-- Flex Item -->
+			</div>
+			<br>
+		</div>
+		<button type="button" id="searchTrains" class="btn btn-primary" (click)='searchTrains()'><i class="material-icons" style="font-size: 1.2rem; line-height: 1em">search</i><font style="font-size: 1.4rem; font-weight: 300;"> Search</font></button>
+
+
+
+
+		<div id="part2" class="flex-container div-hidden">	
+			<div class="flex-item">
+			<!-- Flex Item -->
+				<h2 class="main-header" style="text-align: center; padding-top:5%;"><i class="material-icons" style="font-weight: 700; font-size: 2.8rem; line-height: 1em">equalizer</i> Trains Found</h2>
+				<div id="search-results">
+					<table id='TrainFound'>
+						<thead>
+							<tr>
+								<th>Train No</th>
+								<th>Train Name</th>
+								<th>Departure</th>
+								<th>Arrival</th>
+								<th>Train Type</th>
+								<th>Days-Weekly</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor="let item of trainArr">
+								<td>{{item.trainNo}}</td>
+								<td>{{item.trainName}}</td>
+								<td>{{item.depAtFromStn}}</td>
+								<td>{{item.arrAtToStn}}</td>
+								<td>{{item.trainType}}</td>
+								<td>{{item.runsFromStn}}</td>
+								<td><button type="button" id={{item.trainNo}} class="btn btn-primary option" (click)="loadTrain(item.trainNo)" style="margin-top: 1%;"> SELECT</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- Flex Item -->
+			</div>
+		</div>
+
+		<br>
+
+
+		
+		<div id="part3" class="flex-container div-hidden">
+			<div class="flex-item">
+			<!-- Flex Item -->
+				<div class="form-group">
+					<label for="doj">Journey Date: </label>
+					<input type="date" id="doj" name="doj" [(ngModel)]="doj" class="form-control csp" style="width:80%" >
+					<br>
+				</div>
+			<!-- Flex Item -->
+			</div>
+
+			<div class="flex-item">
+			<!-- Flex Item -->
+				<div class="form-group">
+					<button type="button" id="cancel" class="btn btn-primary procssed" (click)='cancel()'>Cancel <i class="material-icons" style="font-size: 1.2rem; line-height: 1em">clear</i></button>
+					<button type="button" id="processing" class="btn btn-primary procssed" (click)='validatePart1()'>Proceed to Booking Details <i class="material-icons" style="font-size: 1.2rem; line-height: 1em">keyboard_arrow_right</i></button>
+				</div>
+			<!-- Flex Item -->
+			</div>
+		</div>
+			
+			
+
+
+
+		
+	<!-- Sign Up Form Ends Here -->
+	</form>
+</div>

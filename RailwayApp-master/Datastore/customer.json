@@ -1,0 +1,24 @@
+[
+ {
+   "email": "user@gmail.com",
+   "password": "password",
+   "lang": "english",
+   "firstName": "user",
+   "lastName": "user",
+   "dob": "22-03-2018",
+   "aadhar": "123456784321",
+   "pan": "AHCRR7898L",
+   "occupation": "dev",
+   "countryCode": "+91",
+   "phone": "8622030400",
+   "address": "CF 235",
+   "city": "saltlake",
+   "state": "kolkata",
+   "country": "india",
+   "pin": "700091",
+   "userType": "user",
+   "lastLoggIn": "NA",
+   "sessionStatus": "Not Verified",
+   "currentSession": "NA"
+ }
+]

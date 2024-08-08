@@ -1,0 +1,5 @@
+@media print {
+    #printdiv {
+        transform: scale(.80);
+    }
+}

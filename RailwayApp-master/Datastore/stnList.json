@@ -1,0 +1,342 @@
+[
+ {
+   "stn": "SANTRAGACHI JN",
+   "stnCode": "SRC"
+ },
+ {
+   "stn": "HAZRAT NIZAMUDDIN",
+   "stnCode": "NZM"
+ },
+ {
+   "stn": "KACHEGUDA",
+   "stnCode": "KCG"
+ },
+ {
+   "stn": "DADAR",
+   "stnCode": "DR"
+ },
+ {
+   "stn": "LOKMANYATILAK",
+   "stnCode": "LTT"
+ },
+ {
+   "stn": "C SHIVAJI MAHARAJ T",
+   "stnCode": "CSMT"
+ },
+ {
+   "stn": "AMRITSAR JN",
+   "stnCode": "ASR"
+ },
+ {
+   "stn": "CHENNAI CENTRAL",
+   "stnCode": "MAS"
+ },
+ {
+   "stn": "HOWRAH JN",
+   "stnCode": "HWH"
+ },
+ {
+   "stn": "FIROZPUR CANT",
+   "stnCode": "FZR"
+ },
+ {
+   "stn": "HARIDWAR JN",
+   "stnCode": "HW"
+ },
+ {
+   "stn": "JABALPUR",
+   "stnCode": "JBP"
+ },
+ {
+   "stn": "DELHI SARAI ROHILLA",
+   "stnCode": "DEE"
+ },
+ {
+   "stn": "CHANDIGARH",
+   "stnCode": "CDG"
+ },
+ {
+   "stn": "KORBA",
+   "stnCode": "KRBA"
+ },
+ {
+   "stn": "BHAGALPUR",
+   "stnCode": "BGP"
+ },
+ {
+   "stn": "SEALDAH",
+   "stnCode": "SDAH"
+ },
+ {
+   "stn": "DANAPUR",
+   "stnCode": "DNR"
+ },
+ {
+   "stn": "SH MATA V DEVI KATRA",
+   "stnCode": "SVDK"
+ },
+ {
+   "stn": "AGARTALA",
+   "stnCode": "AGTL"
+ },
+ {
+   "stn": "SILCHAR",
+   "stnCode": "SCL"
+ },
+ {
+   "stn": "GUWAHATI",
+   "stnCode": "GHY"
+ },
+ {
+   "stn": "KAMAKHYA",
+   "stnCode": "KYQ"
+ },
+ {
+   "stn": "DARBHANGA JN",
+   "stnCode": "DBG"
+ },
+ {
+   "stn": "GORAKHPUR",
+   "stnCode": "GKP"
+ },
+ {
+   "stn": "NEW DELHI",
+   "stnCode": "NDLS"
+ },
+ {
+   "stn": "DEHRADUN",
+   "stnCode": "DDN"
+ },
+ {
+   "stn": "SECUNDERABAD JN",
+   "stnCode": "SC"
+ },
+ {
+   "stn": "SHALIMAR",
+   "stnCode": "SHM"
+ },
+ {
+   "stn": "JAIPUR",
+   "stnCode": "JP"
+ },
+ {
+   "stn": "BARMER",
+   "stnCode": "BME"
+ },
+ {
+   "stn": "MUZAFFARPUR JN",
+   "stnCode": "MFP"
+ },
+ {
+   "stn": "AJMER",
+   "stnCode": "AII"
+ },
+ {
+   "stn": "GANDHIDHAM BG",
+   "stnCode": "GIMB"
+ },
+ {
+   "stn": "JODHPUR JN",
+   "stnCode": "JU"
+ },
+ {
+   "stn": "BHAGAT KI KOTHI",
+   "stnCode": "BGKT"
+ },
+ {
+   "stn": "BIKANER JN",
+   "stnCode": "BKN"
+ },
+ {
+   "stn": "RAJKOT JN",
+   "stnCode": "RJT"
+ },
+ {
+   "stn": "BHAVNAGAR TRMUS",
+   "stnCode": "BVC"
+ },
+ {
+   "stn": "CHENGALPATTU",
+   "stnCode": "CGL"
+ },
+ {
+   "stn": "TATANAGAR JN",
+   "stnCode": "TATA"
+ },
+ {
+   "stn": "PORBANDAR",
+   "stnCode": "PBR"
+ },
+ {
+   "stn": "INDORE JN BG",
+   "stnCode": "INDB"
+ },
+ {
+   "stn": "AHMEDABAD JN",
+   "stnCode": "ADI"
+ },
+ {
+   "stn": "OKHA",
+   "stnCode": "OKHA"
+ },
+ {
+   "stn": "UDAIPUR",
+   "stnCode": "UDZ"
+ },
+ {
+   "stn": "PATLIPUTRA",
+   "stnCode": "PPTA"
+ },
+ {
+   "stn": "NEW TINSUKIA",
+   "stnCode": "NTSK"
+ },
+ {
+   "stn": "LUCKNOW",
+   "stnCode": "LKO"
+ },
+ {
+   "stn": "JAMMU TAWI",
+   "stnCode": "JAT"
+ },
+ {
+   "stn": "PUNE JN",
+   "stnCode": "PUNE"
+ },
+ {
+   "stn": "PONDICHERRY",
+   "stnCode": "PDY"
+ },
+ {
+   "stn": "KRISHNARAJAPURM",
+   "stnCode": "KJM"
+ },
+ {
+   "stn": "BANDRA TERMINUS",
+   "stnCode": "BDTS"
+ },
+ {
+   "stn": "COIMBATORE JN",
+   "stnCode": "CBE"
+ },
+ {
+   "stn": "KARAIKAL",
+   "stnCode": "KIK"
+ },
+ {
+   "stn": "BHUBANESWAR",
+   "stnCode": "BBS"
+ },
+ {
+   "stn": "TIRUNELVELI",
+   "stnCode": "TEN"
+ },
+ {
+   "stn": "KSR BENGALURU",
+   "stnCode": "SBC"
+ },
+ {
+   "stn": "MYSORE JN",
+   "stnCode": "MYS"
+ },
+ {
+   "stn": "CHENNAI EGMORE",
+   "stnCode": "MS"
+ },
+ {
+   "stn": "YASVANTPUR JN",
+   "stnCode": "YPR"
+ },
+ {
+   "stn": "KOCHUVELI",
+   "stnCode": "KCVL"
+ },
+ {
+   "stn": "ANAND VIHAR TERMINAL",
+   "stnCode": "ANVT"
+ },
+ {
+   "stn": "ERNAKULAM JN",
+   "stnCode": "ERS"
+ },
+ {
+   "stn": "KALKA",
+   "stnCode": "KLK"
+ },
+ {
+   "stn": "JAISALMER",
+   "stnCode": "JSM"
+ },
+ {
+   "stn": "THIRUVANANTHAPURAM CENTRAL",
+   "stnCode": "TVC"
+ },
+ {
+   "stn": "MADGAON",
+   "stnCode": "MAO"
+ },
+ {
+   "stn": "BANGALORE CANT",
+   "stnCode": "BNC"
+ },
+ {
+   "stn": "HYDERABAD DECAN",
+   "stnCode": "HYB"
+ },
+ {
+   "stn": "KANYAKUMARI",
+   "stnCode": "CAPE"
+ },
+ {
+   "stn": "MADURAI JN",
+   "stnCode": "MDU"
+ },
+ {
+   "stn": "TIRUCHCHIRAPALI",
+   "stnCode": "TPJ"
+ },
+ {
+   "stn": "SAI P NILAYAM",
+   "stnCode": "SSPN"
+ },
+ {
+   "stn": "TIRUPATI",
+   "stnCode": "TPTY"
+ },
+ {
+   "stn": "MUMBAI CENTRAL",
+   "stnCode": "MMCT"
+ },
+ {
+   "stn": "SHRI GANGANAGAR",
+   "stnCode": "SGNR"
+ },
+ {
+   "stn": "NAGARSOL",
+   "stnCode": "NSL"
+ },
+ {
+   "stn": "KAKINADA PORT",
+   "stnCode": "COA"
+ },
+ {
+   "stn": "VASCO DA GAMA",
+   "stnCode": "VSG"
+ },
+ {
+   "stn": "VISAKHAPATNAM",
+   "stnCode": "VSKP"
+ },
+ {
+   "stn": "TUTICORIN",
+   "stnCode": "TN"
+ },
+ {
+   "stn": "SAINAGAR SIRIDI",
+   "stnCode": "SNSI"
+ },
+ {
+   "stn": "HUBLI JN",
+   "stnCode": "UBL"
+ }
+]

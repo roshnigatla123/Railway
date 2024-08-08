@@ -1,0 +1,38 @@
+<nav class="navbar fixed-top justify-content-between">
+  <a class="navbar-brand" href="#">
+    <img src="../../assets/irctc_logo.png" width="auto" height="30" class="d-inline-block align-top" alt="bluebox-logo">
+    <font color="#003166"><strong>Indian Railway Catering and Tourism Corporation</strong></font> | Next Generation e-Ticketing System.
+  </a>
+
+  <a class="nav-item nav-link" routerLink="/" routerLinkActive="active">Sign In</a>
+</nav>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">We need to verify your presence</h1>
+    <br>
+    <p class="lead">One Last Step! Let Us verify your registered mobile number. And Done!</p>
+    <br>
+  </div>
+</div>
+<div class="flex-parent">
+	<h4> Please enter your the OTP received on your mobile.</h4>
+	<br>
+
+  <form id="needs-validation">
+      <div class="form-group">
+          <input type="text" id="otp" name="otp" [(ngModel)]="otp" class="form-control" aria-describedby="otpHelp" placeholder="Enter the OTP" required="required"/>
+          
+          <small id="emailHelp" class="form-text text-muted">We have send the OTP to the mobile number {{mobile}} .</small>
+          <div class="invalid-feedback">Please provide a valid OTP.</div>
+      </div>
+      <p class="errorDetect">{{errorDetl}}</p>
+      <br>
+      <button type="button" id="signin" class="btn btn-primary" (click)='verifyUser()' >Verify User</button>
+
+    </form>
+
+
+
+</div>

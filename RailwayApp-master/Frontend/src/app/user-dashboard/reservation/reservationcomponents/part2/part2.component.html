@@ -1,0 +1,172 @@
+<div id="overlay" class="overlay">
+  <div id="loading-img"></div>
+</div>
+
+<div id="errorAlert" class="alert alert-danger div-hidden" role="alert"></div>
+  <div class="flex-parent">
+    <form>
+    <!-- Sign Up Form Starts Here -->	
+      <h2 class="main-header"><i class="material-icons" style="font-weight: 700; font-size: 2.8rem;">person_add</i> Passenger Preference</h2>
+
+      <div class="flex-container">
+        <div class="flex-item">
+          <!-- Flex Item -->
+          <div class="form-group">
+            <label for="name"> Name</label>
+            <input type="text" id="name" name="name" [(ngModel)]="name" class="form-control csp" style="width:92%" placeholder="Full Name (Eg. John Smith)" >
+          </div>
+          <!-- Flex Item -->
+        </div>
+      </div>
+
+
+      <div class="flex-container"> 
+        <div class="flex-item">
+          <!-- Flex Item -->
+          <div class="form-group">
+            <label for="age"> Age</label>
+            <input type="text" id="age" name="age" [(ngModel)]="age" class="form-control csp" style="width:80%" placeholder="Age" >
+          </div>
+          <!-- Flex Item -->
+        </div>
+
+        <div class="flex-item">
+          <!-- Flex Item -->
+          <div class="form-group">
+            <label for="gender"> Gender</label>
+            <input type="text" id="gender" name="gender" [(ngModel)]="gender" class="form-control csp" style="width:80%" list="genderlist" placeholder="Select Gender" >
+            <datalist id="genderlist"></datalist>
+          </div>
+          <!-- Flex Item -->
+        </div>
+      </div>
+
+      <div class="flex-container" style="padding-top: 0%;">
+        <div class="flex-item">
+        <!-- Flex Item -->
+          <div class="form-group">
+            <label for="mobile"> Mobile Number</label>
+            <input type="text" id="mobile" name="mobile" [(ngModel)]="mobile" class="form-control csp" style="width:80%" placeholder="Mobile Number" >
+          </div>
+        <!-- Flex Item -->
+        </div>
+          
+        <div class="flex-item">
+        <!-- Flex Item -->
+          <div class="form-group">
+            <label for="nationPref"> Nationality</label>
+            <input type="text" id="nationPref" name="nationPref" [(ngModel)]="nationPref" class="form-control csp" style="width:80%" list="nationlist" placeholder="Select Nationality">
+            <datalist id="nationlist"></datalist>
+          </div>
+        <!-- Flex Item -->
+        </div>
+      </div>
+
+
+      <div class="flex-container">
+        <div class="flex-item">
+          <!-- Flex Item -->
+          <div class="form-group">
+            <label for="address"> Address</label>
+            <input type="text" id="address" name="address" [(ngModel)]="address" class="form-control csp" style="width:92%" placeholder="Your Address." >
+          </div>
+          <!-- Flex Item -->
+        </div>
+      </div>
+
+      <div class="flex-container" style="padding-top: 0%;">
+        <div class="flex-item">
+          <!-- Flex Item -->
+          <div class="form-group">
+            <label for="reservationType"> Reservation Type</label>
+            <input type="text" id="reservationType" name="reservationType" [(ngModel)]="reservationType" class="form-control csp" style="width:80%" list="reservelist" placeholder="Tatkal or General?" >
+            <datalist id="reservelist"></datalist>
+          </div>
+          <!-- Flex Item -->
+        </div>
+        
+        <div class="flex-item">
+        <!-- Flex Item -->
+          <div class="form-group">
+            <label for="quota"> Quota Type</label>
+            <input type="text" id="quota" name="quota" [(ngModel)]="quota" class="form-control csp" style="width:80%" list="quotalist" placeholder="Select Quota Preference">
+            <datalist id="quotalist"></datalist>
+          </div>
+        <!-- Flex Item -->
+        </div>
+      </div>
+
+      <div class="flex-container" style="padding-top: 0%;">
+        <div class="flex-item">
+        <!-- Flex Item -->
+          <div class="form-group">
+            <label for="vcardtype"> ID-Type</label>
+            <input type="text" id="vcardtype" name="vcardtype" [(ngModel)]="vcardtype" class="form-control csp" style="width:80%" list="vcardlist" placeholder="Select ID-Type">
+            <datalist id="vcardlist"></datalist>
+          </div>
+          <!-- Flex Item -->
+        </div>
+  
+        <div class="flex-item">
+        <!-- Flex Item -->
+          <div class="form-group">
+            <label for="vcardname"> ID-Number</label>
+            <input type="text" id="vcardname" name="vcardname" [(ngModel)]="vcardname" class="form-control csp" style="width:80%" placeholder="Enter the ID-Number">
+          </div>
+        <!-- Flex Item -->
+        </div>
+      </div>
+
+      <div class="flex-container" style="padding-top: 0%;">
+        <div class="flex-item">
+        <!-- Flex Item -->
+          <div class="form-group">
+            <label for="berth"> Berth Preference</label>
+            <input type="text" id="berth" name="berth" [(ngModel)]="berth" class="form-control csp" style="width:80%" list="berthlist" placeholder="Select Berth Preference">
+            <datalist id="berthlist"></datalist>
+          </div>
+        <!-- Flex Item -->
+        </div>
+    
+        <div class="flex-item">
+        <!-- Flex Item -->
+          <div class="form-group">
+            <label for="classPref"> Class</label>
+            <input type="text" id="classPref" name="classPref" [(ngModel)]="classPref" class="form-control csp" style="width:80%" list="class-list" placeholder="Select Class Preference">
+            <datalist id="class-list"></datalist>
+          </div>
+        <!-- Flex Item -->
+        </div>
+      </div>
+
+
+      <div class="flex-container" style="padding-top: 0%;">
+        <div class="flex-item">
+        <!-- Flex Item -->
+          <div class="form-group">
+            <label for="mealType"> Meal Type</label>
+            <input type="text" id="mealType" name="mealType" [(ngModel)]="mealType" class="form-control csp" style="width:80%" list="meallist" placeholder="Select Meal Preference">
+            <datalist id="meallist"></datalist>
+          </div>
+        <!-- Flex Item -->
+        </div>
+      
+        <div class="flex-item">
+        <!-- Flex Item -->
+          <div class="form-group">
+            <label for="conssPref"> Concessions</label>
+            <input type="text" id="conssPref" name="conssPref" [(ngModel)]="conssPref" class="form-control csp" style="width:80%" list="concessionlist" placeholder="Select Concession Preference">
+            <datalist id="concessionlist"></datalist>
+          </div>
+        <!-- Flex Item -->
+        </div>
+      </div>
+
+      
+      <br><br>
+      <button type="button" id="createPnr" class="btn btn-primary" (click)='createPnr()'><i class="material-icons" style="font-size: 1.2rem; line-height: 1em">done</i><font style="font-size: 1.4rem; font-weight: 300;"> Proceed For Payment</font></button>
+      <br><br>
+
+    <!-- Sign Up Form Ends Here -->
+    </form>
+  </div>

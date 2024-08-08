@@ -1,0 +1,39 @@
+<div class="team-view">
+	<div class="header"><h1 class="display-3"><i class="material-icons" style="font-size: 3.6rem; font-weight: 700;">layers</i> My Booking History</h1></div>
+
+	
+	<p id="message" class="mess div-hidden"> You do not have any Bookings as of Now! </p>
+	<div id="cardss" class="card-orient">
+		<ul class="team">
+			<li *ngFor="let item of bookings"> 
+
+
+				<div id="notify_{{item.userid}}" class="card" style="width: 45rem;">
+				  <img class="card-img-top" src="../../../assets/card-background.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h4 class="card-title"><strong>PNR Number: </strong>{{item.basic.pnrNumber}}</h4>
+				    <p class="card-text">You will find all your booking details, PNR Number and date of journey!</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item"><strong>Train No. & Train Name: </strong>{{item.basic.trainNo}}/{{item.basic.trainName}}</li>
+						<li class="list-group-item"><strong>Boarding: </strong>{{item.basic.boardingFrom}}</li>
+						<li class="list-group-item"><strong>Resv Upto: </strong>{{item.basic.reservationUpto}}</li>
+						<li class="list-group-item"><strong>Date Of Boarding: </strong>{{item.basic.dateOfBoarding}}</li>
+						<li class="list-group-item"><strong>Total Fare: ₹</strong>{{item.fareDetls.totalFare}}</li>
+						<li class="list-group-item"><strong>Booking Status/Coach No./Seat No/Berth: </strong>{{item.passengerDetls.bookingStatus}}/{{item.passengerDetls.coachNo}}/{{item.passengerDetls.seatNo}}/{{item.passengerDetls.berth}}</li>
+				    <li class="list-group-item"><strong>Passenger Name: </strong>{{item.passengerDetls.name}}</li>
+				    <li class="list-group-item">
+				    	<button type="button" id="membr" class="btn btn-primary btn-lg " (click)="view_print(item)">View Details</button>
+				    </li>
+				  </ul>
+				</div>
+
+				<br><br>
+
+
+
+			</li>
+		</ul>
+	</div>
+
+</div>

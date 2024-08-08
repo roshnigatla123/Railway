@@ -1,0 +1,33 @@
+<div class="request-body">
+  	<div class="header"><h1 class="display-3"><i class="material-icons" style="font-size: 3.6rem; font-weight: 700;">announcement</i> Notifications</h1></div>
+
+
+  <p id="message" class="mess"> You do not have any news-feeds! </p> 
+    <div id="requ" class="all-requests">
+      <ul class="team">
+        <li *ngFor="let item of notifications"> 
+  
+  
+          <div id="notify_{{item._id}}" class="card" style="width: 50rem;">
+            <div class="card-body">
+              <h4 class="card-title"><i class="material-icons">extension</i> Notification</h4>
+              <p class="card-text"><strong>{{item.userid}}</strong><br>{{item.dateOfCreation}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>{{item.title}}</strong></li>
+              <li class="list-group-item">{{item.description}}</li>
+              <li class="list-group-item">
+                <button type="button" class="btn btn-primary btn-lg" (click)="read(item)">Seen</button>
+                
+              </li>
+  
+            </ul>
+          </div>
+  
+          <br><br>
+
+        </li>
+      </ul>
+  
+    </div>
+  </div>

@@ -1,0 +1,112 @@
+<div class="flex-parent">
+	<form>
+	<!-- Sign Up Form Starts Here -->	
+		
+		<div class="flex-container">
+			
+			<div class="flex-item">
+
+				<!-- Flex Item -->
+			    <h2>User Account Details</h2>
+			    <br>
+
+				<div class="form-group">
+					<label for="InputEmail">Email address</label>
+				    <input type="email" id="username" name="username" [(ngModel)]="username" class="form-control csp" aria-describedby="emailHelp" placeholder="Enter email">
+				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+			    <div class="form-group">
+				    <label for="password">Password</label>
+				    <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control csp" placeholder="Password" >
+				</div>
+				<div class="form-group">
+				    <label for="confirm">Confirm Password</label>
+				    <input type="password" id="cpassword" name="confirm" [(ngModel)]="confirm" class="form-control csp" placeholder="Confirm Password" >
+				</div>
+			    
+			    <br>
+			    <br>
+
+			    <h2>Financial Details</h2>
+			    <br>
+
+			    <div class="form-group">
+				    <label for="aadhaar">Aadhaar Number</label>
+				    <input type="text" id="aadhaar" name="aadhaar" [(ngModel)]="aadhaar" class="form-control csp" aria-describedby="aadhaarHelp" placeholder="Aadhaar Number">
+				    <small id="aadhaarHelp" class="form-text text-muted">Please enter your Aadhaar Number.</small>
+				</div>
+				<div class="form-group">
+				    <label for="PAN">PAN</label>
+				    <input type="text" id="PAN" name="PAN" [(ngModel)]="PAN" class="form-control csp" aria-describedby="PANHelp" placeholder="PAN number">
+					<small id="PANHelp" class="form-text text-muted">Please enter your PAN number.</small>
+				</div>
+				<div class="form-group">
+				    <label for="occupation">Occupation</label>
+				    <input type="text" id="occupation" name="occupation" [(ngModel)]="occupation" class="form-control csp" placeholder="Occupation">
+				</div>
+			</div>
+			<!-- Flex Item -->
+			<div class="flex-item">
+				<h2>Personal Details</h2>
+				<br>
+
+				<div class="form-group">
+					<label for="firstName">First Name</label>
+				    <input type="text" id="firstname" name="firstname" [(ngModel)]="firstname" class="form-control csp" placeholder="First Name">
+				</div>
+				<div class="form-group">
+				    <label for="lastName">Last Name</label>
+				    <input type="text" id="lastname" name="lastname" [(ngModel)]="lastname" class="form-control csp" placeholder="Last Name">
+				</div>
+				<div class="form-group">
+				    <label for="dob">Date Of Birth</label>
+				    <input type="date" id="dob" name="dob" [(ngModel)]="dob" class="form-control csp" placeholder="">
+				</div>
+				<div class="form-group">
+				    <label for="phone">Phone Number</label>
+				    <input type="text" id="phone" name="phone" [(ngModel)]="phone" class="form-control csp" placeholder="Phone Number">
+				</div>
+				<div class="form-group">
+				    <label for="address">Address Line 1</label>
+				    <input type="text" id="address" name="address" [(ngModel)]="address" class="form-control csp" placeholder="Address Line 1">
+				</div>
+				<div class="form-group">    
+				    <label for="city">City</label>
+				    <input type="text" id="city" name="city" [(ngModel)]="city" class="form-control csp" placeholder="City">
+				</div>
+				<div class="form-group">
+				    <label for="state">State</label>
+				    <input type="text" id="state" name="state" [(ngModel)]="state" class="form-control csp" placeholder="State">
+				</div>
+				<div class="form-group">
+				    <label for="country">Country</label>
+				    <input type="text" id="country" name="country" [(ngModel)]="country" class="form-control csp" placeholder="Country">
+				</div>
+				<div class="form-group">
+					<label for="zip">PIN/ZIP Code</label>
+				    <input type="text" id="zip" name="zip" [(ngModel)]="zip" class="form-control csp" placeholder="PIN/ZIP Code">
+				</div>	  
+			</div>
+			<!-- Flex Item -->
+			
+
+		</div>
+		<br>
+		<div class="form-check was-validated">
+    		<label class="form-check-label custom-control custom-checkbox">
+      		<span class="custom-control-indicator"></span>
+    		<span class="custom-control-description">I have read the all the <a class="terms" href="#">terms and conditions</a> carefully, as stated by your company and will abide by them.</span>     		
+    		</label>
+  		</div>
+		<br>
+		<p class="errorDetect">{{action}}</p>
+      	<br>
+      	<p style="padding-left: 40%">
+      		<re-captcha (resolved)="resolved($event)" siteKey="6Lc_LzUUAAAAAJaPaGSXt3-_u9nhBYP0t9kx0C3_"></re-captcha>
+      	</p>
+      	<br>
+		<button type="button" id="signup" class="btn btn-primary hidebutt" (click)='validateSignUp()' >Sign Up</button>
+
+	<!-- Sign Up Form Ends Here -->
+	</form>
+</div>

@@ -1,0 +1,167 @@
+    <table id='header' style="width:100%; border: 0; border-collapse: collapse">
+        <tr style="border: 0">
+            <td><img src="../../assets/ir_logo.png" style="height: 80px; padding-left: 2%;"></td>
+            <td>
+                <p style="font-family: 'Segoe UI', sans-serif; font-size: 1.6rem; font-weight: 700; text-align: center">
+                    <u>IRCTC e-Ticketing Service</u><br>
+                    <u>Electronic Reservation Slip (Personal User)</u>                    
+                </p>
+            </td>
+            <td><img src="../../assets/irctc_logo.png" style="height: 80px; padding-left: 1%;"></td>
+        </tr>
+    </table>
+    <table style="width: 100%; border: 0px; border-collapse: collapse">
+        <tr>
+            <td style="padding:1% 4% 1% 4%">
+                <ul style="font-family: 'Segoe UI', sans-serif; font-size: 0.7rem; font-weight:400; text-align: left;">
+                    <li>This ticket will only be valid along with an ID proof in original. If found without ID Proof, Passenger will be <b>treated as without ticket and charged as per extant Railway rules.</b></li>
+                    <li><b>Valid IDs to be presented during train journey by one of the passenger booked on an e-ticket: Voter Identity Card / Passport / PAN Card / Driving License / Photo ID issued by Central / State Govt. / Student identity Card with photograph issued by recognized School or College for their students / National Bank Passbook with photograph / credit Cards issued by banks with laminated photograph.</b></li>
+                    <li>General rules / information for e-ticket passenger have to be studied by the customer for cancellation & refund.</li> 
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <div style="padding: 0.2% 2%">
+        <table style="width:100%; border: 1px solid black; border-collapse: collapse; font-family: 'Segoe UI', sans-serif; font-size: 0.7rem;">
+            <tr style="border: 1px solid black;">
+                <td style="padding:0% 1%; border: 1px solid black;"><b>PNR Number:</b> {{pnrNo}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Train No. & Train Name:</b> {{trainNo}}/{{trainName}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Quota:</b> {{quotaType}}</td>
+            </tr>
+
+            <tr style="border: 1px solid black;">
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Provisional Number:</b> {{provisionalNumber}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Date Of Booking:</b> {{dateOfBooking}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Class:</b> {{class}}</td>
+            </tr>
+
+            <tr style="border: 1px solid black;">
+                <td style="padding:0% 1%; border: 1px solid black;"><b>From:</b> {{fromStn}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Date Of Journey:</b> {{dateOfJourney}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>To:</b> {{toStn}}</td>
+            </tr>
+
+            <tr style="border: 1px solid black;">
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Boarding:</b> {{boardingFrom}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Date Of Boarding:</b> {{dateOfBoarding}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Scheduled Departure:</b> {{scheduledDeparture}}</td>
+            </tr>
+
+            <tr style="border: 1px solid black;">
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Resv Upto:</b> {{reservationUpto}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Adult:</b> {{adult}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Children:</b> {{child}}</td>
+            </tr>
+        </table>
+        
+
+
+        <table style="width:100%; border: 1px solid black; border-collapse: collapse; font-family: 'Segoe UI', sans-serif; font-size: 0.8rem;">
+            <tr style="border: 1px solid black;">
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Address:</b> {{address}}</td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Mobile Number:</b> {{mobile}}</td>
+            </tr>
+        </table>
+    </div>
+    
+
+    <p style="padding-left: 2%; margin-bottom: 0.5%; font-family:'Segoe UI', sans-serif; font-weight: 700;">Fare Details:</p>
+    <div style="padding: 0% 2%; text-align: center">
+        <table style="width:100%; border: 1px solid black; border-collapse: collapse; font-family: 'Segoe UI', sans-serif; font-size: 0.8rem;">
+            <tr style="border: 1px solid black; text-align: center">
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Transaction ID</b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Base Fare</b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Reservation Charge</b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Tatkal Charge</b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Catering Charge</b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>GST(18%)</b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Total Fare</b></td>
+            </tr>
+
+            <tr style="border: 1px solid black; text-align: center">
+                <td style="padding:0% 1%; border: 1px solid black;">{{TransactionId}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;">&#x20b9; {{baseFare}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;">&#x20b9; {{reservationCharge}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;">&#x20b9; {{tatkalCharge}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;">&#x20b9; {{cateringCharge}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;">&#x20b9; {{gst}}</td>
+                <td style="padding:0% 1%; border: 1px solid black;">&#x20b9; {{totalFare}}</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <p style="padding-left: 2%; margin-bottom: 0.5%; font-family:'Segoe UI', sans-serif; font-weight: 700;">Passenger Details:</p>
+    <div style="padding: 0% 2%; text-align: center">
+        <table style="width:100%; border: 1px solid black; border-collapse: collapse; font-family: 'Segoe UI', sans-serif; font-size: 0.8rem;">
+            <tr style="border: 1px solid black; text-align: center">
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Sl No </b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Name </b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Age </b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Sex </b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Concession </b></td>
+                <td style="padding:0% 1%; border: 1px solid black;"><b>Booking Status/Coach No./Seat No/Berth </b></td>
+            </tr>
+
+            <tr style="border: 1px solid black; text-align: center">
+                <td style="padding:0% 1%; border: 1px solid black;">1 </td>
+                <td style="padding:0% 1%; border: 1px solid black;">{{name}} </td>
+                <td style="padding:0% 1%; border: 1px solid black;">{{age}} </td>
+                <td style="padding:0% 1%; border: 1px solid black;">{{gender}} </td>
+                <td style="padding:0% 1%; border: 1px solid black;">{{concessions}} </td>
+                <td style="padding:0% 1%; border: 1px solid black;">{{bookingStatus}}/{{coachNo}}/{{seatNo}}/{{berth}} </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div style="padding-left: 6%;">
+        <table style="width:80%; border: 0; border-collapse: collapse">
+            <tr>
+                <td style="padding:2% 4% 1% 4%; font-family:'Segoe UI', sans-serif;">
+                    <h3>Please scan this QR CODE to validate the ticket.</h3>
+                    <h5><u>This ticket is booked on a personal user ID and cannot be sold by an agent. If bought from an agent by an individual it is at his or her risk.</u></h5>  
+                </td>
+                <td style="padding:1% 4% 1% 4%">
+                    <qrcode [qrdata]="qrValue" [size]="256" [level]="'H'"></qrcode>
+
+
+
+
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    
+
+    
+
+    <br>
+    <div style="text-align:center; padding: 1% 4% 1% 4%">
+        <img src="../../assets/{{adSense}}" style="height: 100px; width: 550px;" alt="ad3">
+    </div>
+
+    <p style="padding-left: 2%; margin-bottom: 0.5%; font-family: 'Segoe UI', sans-serif; font-weight: 700;">IMPORTANT:</p>
+    <table style="width:100%; border: 0; border-collapse: collapse">
+        <tr>
+            <td style="padding:1% 4% 1% 4%">
+                <ul style="font-family: 'Segoe UI', sans-serif; font-size: 0.7rem; font-weight:400; text-align: left;">
+                    <li><b> For details, rules and terms & conditions of E-Ticketing Services, please visit <a href="www.irctc.co.in">www.irctc.co.in</a></b></li>
+                    <li><b>Departure time printed on this ERS/VRM is liable to changes. Please check the correct departure time Railway Station Enquiry, or Dial 139 or SMS 'RAIL' to 139.</b></li>
+                    <li><b>General rules / information foe e-ticket passenger have to be studied by the customer for cancellation & refund.</b></li>
+                    <li><b>Contact Us on: 24X7 hrs Customer Support at 011-39340000, or Mail To: <a href="mailto:care@irctc.co.in">care@irctc.co.in</a></b></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+
+    <table style="width:100%; border: 0; border-collapse: collapse">
+        <tr>
+            <td><img src="../../assets/irctc_full.gif" width="90%" alt="irctc-logo"></td>
+            <td><img src="../../assets/CRIS.png" width="90%" alt="CRIS-logo"></td>
+        </tr>
+    </table> 
+

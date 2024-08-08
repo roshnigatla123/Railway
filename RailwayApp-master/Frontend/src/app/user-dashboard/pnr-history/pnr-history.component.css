@@ -1,0 +1,131 @@
+h1{
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 300;
+	font-size: 2.0rem;
+	text-align: center;
+	color: #42A5F5;
+}
+
+p{
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 200;
+	font-size: 1.1rem;
+	text-align: justify;
+	color: black;
+}
+
+
+.btn-primary:hover{
+	cursor: pointer;
+	border: 1px solid #C62828;
+	background-color: #C62828;
+}
+
+.btn-secondary:hover{
+	cursor: pointer;
+}
+
+
+.btn-primary{
+	border: 1px solid #E53935;
+	background-color: #E53935;
+}
+
+
+.team-view{
+	position: absolute;
+	width: 100%;
+	background-color: #d3d9df;
+}
+
+.main-header{
+	font-weight: 700;
+	font-size: 2.8rem;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	color: #1565C0;
+	text-align: center;
+}
+
+
+.flex-container{
+	padding: 0;
+	margin: 0;
+	border: 0;
+
+	width: 100%;
+	height: 50vh;
+}
+
+.flex-item{
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 200;
+
+	text-align: center;
+}
+
+.display-3{
+	font-size: 4.1rem;
+	font-weight: 700;
+	text-align: center;	 
+	color: rgb(28, 117, 43);
+}
+
+.my-4{
+	background-color: #BBDEFB;
+	width: 80%;
+}
+
+
+.header{
+	padding-top: 50px;
+	padding-bottom: 60px;
+	background: url('../../../assets/background_booking_green.png');
+}
+
+.card-orient{
+	padding:0;
+	padding-left: 16%;
+	
+
+}
+
+ul{
+	list-style: none;
+}
+
+.team li{
+	padding-bottom: 20px;
+}
+
+
+.mess{
+	padding-top: 50px;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: rgb(28, 117, 43);
+}
+
+.card-body{
+	background-color: #E53935;
+	color: white;
+}
+
+.card-body p {
+	font-weight: 400;
+	color: white;
+}
+
+.notification-seen{
+	position: absolute;
+	visibility: hidden;	
+}
+
+.div-hidden{
+	visibility: hidden;
+}
+
+.div-show{
+	visibility: visible;
+}
